@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    // 캘린더
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    // 경계선
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background = "#ccc"
+        app:layout_constraintTop_toBottomOf = "@id/calendarView"/>
+
+    // 한달 기록
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="한 달을 돌아보며.."
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    // 선택 날짜 표시
+    <!--<TextView
+        android:id="@+id/selectedDay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"/>
+    -->
+
+    <EditText
+        android:id="@+id/freeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="내용을 입력해주세요" />
+
+    <Button
+        android:id="@+id/save_Btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="저장" />
+
+
+</LinearLayout>
