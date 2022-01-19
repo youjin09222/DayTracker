@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity1">
 
     <TextView
         android:id="@+id/title"
@@ -13,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
-        android:text="day tracker"
+        android:text="DAY TRACKER"
         android:textSize="20sp"
         android:fontFamily="@font/montserratsubrayadabold"
         android:textColor="@color/black"
@@ -80,7 +79,7 @@
         app:layout_constraintRight_toRightOf="@id/목차"
         app:layout_constraintBottom_toBottomOf="@+id/date"
         app:srcCompat="@mipmap/time"
-        android:contentDescription="todo"
+        android:contentDescription="TODO"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
         android:background="@color/white"/>
@@ -97,6 +96,23 @@
         app:layout_constraintRight_toRightOf="@id/시간"
         android:layout_marginTop="20dp"/>
 
+    <EditText
+        android:id="@+id/할일1_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:autofillHints="details"
+        android:background="@drawable/box_background"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:inputType="none"
+        android:padding="5dp"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일1"
+        app:layout_constraintTop_toBottomOf="@+id/할일1"
+        tools:ignore="SmallSp" />
+
     <Button
         android:id="@+id/할일1"
         android:layout_width="305dp"
@@ -104,7 +120,7 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/montserratsubrayadabold"
-        android:text="todothings"
+        android:text="Breakfast"
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textSize="15sp"
@@ -123,15 +139,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일1"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
-
+    <EditText
+        android:id="@+id/할일2_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일2"
+        app:layout_constraintTop_toBottomOf="@+id/할일2"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일2"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일1"
-        app:layout_constraintTop_toBottomOf="@+id/할일1" />
+        app:layout_constraintEnd_toEndOf="@+id/할일1_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일1_1" />
 
 
     <TextView
@@ -146,14 +177,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일2"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일3_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일3"
+        app:layout_constraintTop_toBottomOf="@+id/할일3"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일3"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일2"
-        app:layout_constraintTop_toBottomOf="@+id/할일2" />
+        app:layout_constraintEnd_toEndOf="@+id/할일2_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일2_1" />
 
     <TextView
         android:id="@+id/시간3"
@@ -167,14 +214,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일3"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일4_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일4"
+        app:layout_constraintTop_toBottomOf="@+id/할일4"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일4"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일3"
-        app:layout_constraintTop_toBottomOf="@+id/할일3" />
+        app:layout_constraintEnd_toEndOf="@+id/할일3_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일3_1" />
 
     <TextView
         android:id="@+id/시간4"
@@ -188,14 +251,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일4"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일5_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일5"
+        app:layout_constraintTop_toBottomOf="@+id/할일5"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일5"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일4"
-        app:layout_constraintTop_toBottomOf="@+id/할일4" />
+        app:layout_constraintEnd_toEndOf="@+id/할일4_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일4_1" />
 
     <TextView
         android:id="@+id/시간5"
@@ -209,13 +288,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일5"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일6_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일6"
+        app:layout_constraintTop_toBottomOf="@+id/할일6"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
+
     <Button
         android:id="@+id/할일6"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일5"
-        app:layout_constraintTop_toBottomOf="@+id/할일5" />
+        app:layout_constraintEnd_toEndOf="@+id/할일5_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일5_1" />
 
     <TextView
         android:id="@+id/시간6"
@@ -229,13 +325,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일6"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일7_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일7"
+        app:layout_constraintTop_toBottomOf="@+id/할일7"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
+
     <Button
         android:id="@+id/할일7"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일6"
-        app:layout_constraintTop_toBottomOf="@+id/할일6" />
+        app:layout_constraintEnd_toEndOf="@+id/할일6_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일6_1" />
 
     <TextView
         android:id="@+id/시간7"
@@ -249,14 +362,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일7"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일8_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일8"
+        app:layout_constraintTop_toBottomOf="@+id/할일8"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일8"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일7"
-        app:layout_constraintTop_toBottomOf="@+id/할일7" />
+        app:layout_constraintEnd_toEndOf="@+id/할일7_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일7_1" />
 
 
     <TextView
@@ -271,14 +400,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일8"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일9_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일9"
+        app:layout_constraintTop_toBottomOf="@+id/할일9"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일9"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일8"
-        app:layout_constraintTop_toBottomOf="@+id/할일8" />
+        app:layout_constraintEnd_toEndOf="@+id/할일8_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일8_1" />
 
     <TextView
         android:id="@+id/시간9"
@@ -292,14 +437,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일9"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일10_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일10"
+        app:layout_constraintTop_toBottomOf="@+id/할일10"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일10"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일9"
-        app:layout_constraintTop_toBottomOf="@+id/할일9" />
+        app:layout_constraintEnd_toEndOf="@+id/할일9_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일9_1" />
 
     <TextView
         android:id="@+id/시간10"
@@ -313,14 +474,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일10"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일11_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일11"
+        app:layout_constraintTop_toBottomOf="@+id/할일11"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일11"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일10"
-        app:layout_constraintTop_toBottomOf="@+id/할일10" />
+        app:layout_constraintEnd_toEndOf="@+id/할일10_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일10_1" />
 
     <TextView
         android:id="@+id/시간11"
@@ -334,14 +511,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일11"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일12_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일12"
+        app:layout_constraintTop_toBottomOf="@+id/할일12"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일12"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일11"
-        app:layout_constraintTop_toBottomOf="@+id/할일11" />
+        app:layout_constraintEnd_toEndOf="@+id/할일11_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일11_1" />
 
     <TextView
         android:id="@+id/시간12"
@@ -355,13 +548,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일12"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일13_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일13"
+        app:layout_constraintTop_toBottomOf="@+id/할일13"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
+
     <Button
         android:id="@+id/할일13"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일12"
-        app:layout_constraintTop_toBottomOf="@+id/할일12" />
+        app:layout_constraintEnd_toEndOf="@+id/할일12_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일12_1" />
 
     <TextView
         android:id="@+id/시간13"
@@ -375,14 +585,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일13"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일14_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일14"
+        app:layout_constraintTop_toBottomOf="@+id/할일14"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
 
     <Button
         android:id="@+id/할일14"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일13"
-        app:layout_constraintTop_toBottomOf="@+id/할일13" />
+        app:layout_constraintEnd_toEndOf="@+id/할일13_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일13_1" />
 
     <TextView
         android:id="@+id/시간14"
@@ -396,13 +622,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일14"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일15_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일15"
+        app:layout_constraintTop_toBottomOf="@+id/할일15"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
+
     <Button
         android:id="@+id/할일15"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일14"
-        app:layout_constraintTop_toBottomOf="@+id/할일14" />
+        app:layout_constraintEnd_toEndOf="@+id/할일14_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일14_1" />
 
     <TextView
         android:id="@+id/시간15"
@@ -416,13 +659,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일15"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일16_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일16"
+        app:layout_constraintTop_toBottomOf="@+id/할일16"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
+
     <Button
         android:id="@+id/할일16"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일15"
-        app:layout_constraintTop_toBottomOf="@+id/할일15" />
+        app:layout_constraintEnd_toEndOf="@+id/할일15_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일15_1" />
 
     <TextView
         android:id="@+id/시간16"
@@ -436,13 +696,30 @@
         app:layout_constraintTop_toTopOf="@+id/할일16"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일17_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일17"
+        app:layout_constraintTop_toBottomOf="@+id/할일17"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"/>
+
     <Button
         android:id="@+id/할일17"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일16"
-        app:layout_constraintTop_toBottomOf="@+id/할일16" />
+        app:layout_constraintEnd_toEndOf="@+id/할일16_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일16_1" />
 
     <TextView
         android:id="@+id/시간17"
@@ -456,14 +733,31 @@
         app:layout_constraintTop_toTopOf="@+id/할일17"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
 
+    <EditText
+        android:id="@+id/할일18_1"
+        android:layout_width="305dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/robotolight"
+        android:hint="메모를 추가해주세요."
+        android:textAlignment="textStart"
+        android:textColorHint="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/할일18"
+        app:layout_constraintTop_toBottomOf="@+id/할일18"
+        android:autofillHints="details"
+        tools:ignore="SmallSp"
+        android:inputType="none"
+        android:background="@drawable/box_background"
+        android:padding="5dp"
+        android:layout_marginBottom="50dp"/>
+
     <Button
         android:id="@+id/할일18"
         android:layout_width="305dp"
         android:layout_height="45dp"
         android:layout_marginTop="7dp"
-        app:layout_constraintEnd_toEndOf="@+id/할일17"
-        app:layout_constraintTop_toBottomOf="@+id/할일17"
-        android:layout_marginBottom="50dp"/>
+        app:layout_constraintEnd_toEndOf="@+id/할일17_1"
+        app:layout_constraintTop_toBottomOf="@+id/할일17_1" />
 
     <TextView
         android:id="@+id/시간18"
@@ -476,7 +770,6 @@
         app:layout_constraintBottom_toBottomOf="@+id/할일18"
         app:layout_constraintTop_toTopOf="@+id/할일18"
         app:layout_constraintLeft_toLeftOf="@+id/date"/>
-
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
@@ -484,12 +777,10 @@
         android:thumb="@drawable/thimb2"
         android:track="@drawable/traker"
         android:layout_marginRight="5dp"
-        android:checked="false"
         app:layout_constraintBottom_toBottomOf="@+id/Hour"
         app:layout_constraintEnd_toStartOf="@+id/Hour"
         app:layout_constraintTop_toTopOf="@+id/Hour"
-        tools:ignore="SmallSp,UseSwitchCompatOrMaterialXml" />
-
-
+        tools:ignore="SmallSp,UseSwitchCompatOrMaterialXml"
+        android:checked="true"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

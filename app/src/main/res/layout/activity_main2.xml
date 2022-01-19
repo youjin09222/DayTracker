@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/robotobold"
+        android:paddingTop="12dp"
+        android:text="하루의 시작과 끝을"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day2"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/robotobold"
+        android:paddingTop="12dp"
+        android:text="알려주세요"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/day" />
+
+    <TextView
+        android:id="@+id/day_plus_1"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/robotobold"
+        android:paddingTop="12dp"
+        android:text="하루 기록 시간은 설정에서"
+        android:textAlignment="textStart"
+        android:textColor="#4A4A4A"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/day2" />
+
+    <TextView
+        android:id="@+id/day_plus_2"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/robotobold"
+        android:paddingTop="12dp"
+        android:text="언제든지 수정이 가능해요"
+        android:textAlignment="textStart"
+        android:textColor="#4A4A4A"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/day_plus_1" />
+
+
+    <TextView
+        android:id="@+id/start_text"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/robotobold"
+        android:paddingTop="12dp"
+        android:text="시작 시간"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/day2"
+        app:layout_constraintTop_toTopOf="@+id/start_time" />
+
+    <Spinner
+        android:id="@+id/start_time"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="44dp"
+        android:entries="@array/time"
+        android:fontFamily="@font/robotobold"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/start_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/end_time"
+        android:layout_width="184dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="304dp"
+        android:entries="@array/time1"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/start_time" />
+
+    <TextView
+        android:id="@+id/end_text"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/robotobold"
+        android:paddingTop="12dp"
+        android:text="마지막 시간"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/start_text"
+        app:layout_constraintTop_toTopOf="@+id/end_time" />
+
+
+    <TextView
+        android:id="@+id/end_time_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/box_background4"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="560dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:background="@drawable/box_background5"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button3"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/box_background2"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/montserratsubrayadabold"
+        android:scaleType="fitCenter"
+        android:text="시작하기"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="610dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/end_time"
+        app:layout_constraintStart_toEndOf="@+id/end_text"
+        app:layout_constraintTop_toTopOf="@+id/end_time"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/line2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="102dp"
+        android:layout_height="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/start_time"
+        app:layout_constraintTop_toTopOf="@+id/start_time"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/line"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="144dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

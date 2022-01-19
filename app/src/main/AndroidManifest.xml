@@ -9,13 +9,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Calendar">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.CalendarActivity">
+
+        <activity
+            android:name="start_page.MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".button"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
